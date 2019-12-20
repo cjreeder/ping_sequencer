@@ -49,6 +49,9 @@ func main() {
 			//fmt.Printf("Testings %v\n", order[i])
 			if order[i]+1 != order[i+1] {
 				fmt.Printf("Ordering is missing at this point: %v\n", order[i])
+				fmt.Printf("The current ping is %v and the next ping is %v\n", order[i], order[i+1])
+				diff := order[i+1] - order[i]
+				fmt.Printf("The Difference between them is %v\n", diff)
 			}
 		}
 		//for i, next := range order {
